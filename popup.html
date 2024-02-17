@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📋 Apollo Easy Scrape</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            min-width: 500px;
+            padding: 5px;
+        }
+        * {
+            margin-top: 10px;
+        }
+        .button-container {
+            flex-direction: row;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px;
+            border: none;
+            background-color: #007BFF; /* Nice blue color */
+            color: white;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-family: Poppins, sans-serif;
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+        button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        input, label {
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+            margin-right: 10px;
+            border-radius: 5px;
+            border-color: #383838;
+        }
+        h1 {
+            font-size: 28px;
+            margin-top: -10px;
+            margin-bottom: -2px;
+        }
+        h4 a {
+            color: #676767;
+            text-decoration: none;
+        }
+
+        h4 a:hover {
+
+            color: #007BFF;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>📋 Apollo Easy Scrape</h1>
+    <h4><a href="https://www.youtube.com/@itsmikepowers" target="_blank">By Mike</a> <a href="https://www.buymeacoffee.com/itsmikepowers" target="_blank">Buy Me A Coffee :)</a></h4>
+    <div id="status"></div>
+    <div id="total"></div>
+    <label for="timeBetweenPages">Time Between Pages (in seconds):</label>
+    <input type="number" id="timeBetweenPages" name="timeBetweenPages" min="1" max="10" value="5">
+    <div class="button-container">
+        <button id="displayTableButton">Scrape List</button>
+        <input type="text" id="fileName" placeholder="Enter file name">
+        <button id="downloadCsvButton">Download CSV</button>
+    </div>
+    <div id="tableContainer"></div>
+    <script src="popup.js"></script>
+</body>
+</html>

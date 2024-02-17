@@ -1,0 +1,16 @@
+{
+    "name": "Apollo Easy Scrape",
+    "description": "Easily scrape data from web pages with a single click.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["activeTab", "scripting"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "16": "clip.png",
+      "48": "clip.png",
+      "128": "clip.png"
+    }
+  }
+  
