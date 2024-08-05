@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var baseUrl = currentTab.url;
 
 
-        if (baseUrl.includes('https://app.apollo.io/#/people?finderViewId')) {
+        if (baseUrl.includes('https://app.apollo.io/') && baseUrl.includes('#/people?finderViewId=')) {
             statusElement.textContent = "You found a list!";
             statusElement.style.fontSize = "20px";
             actionButton.disabled = false;
